@@ -1,17 +1,11 @@
 import React from "react";
-import HookCount from "./component/HookCount";
-import HookCounterTwo from "./component/HookCounterTwo";
-import HookCounterThree from "./component/HookCounterThree";
-import HookCounterFour from "./component/HookCounterFour";
-import HookCounterOne from "./component/HookCounterOne";
-import HookMouse from "./component/HookMouse";
-import MouseContainer from "./component/MouseContainer";
-import IntervalHook from "./component/IntervalHook";
+import DataFetching from "./component/DataFetching";
 
 function App() {
   return (
     <div>
-      <IntervalHook />
+      <DataFetching></DataFetching>
+      {/* <IntervalHook /> */}
       {/* <MouseContainer /> */}
       {/* <HookMouse /> */}
       {/* <HookCounterOne /> */}
