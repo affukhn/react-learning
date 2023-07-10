@@ -1,16 +1,17 @@
 import React from "react";
-import ComponentA from "./component/ComponentA";
+import CounterOne from "./component/CounterOne";
 
-export const UserContext = React.createContext();
-export const ChannelContext = React.createContext();
+// export const UserContext = React.createContext();
+// export const ChannelContext = React.createContext();
 function App() {
   return (
     <div>
-      <UserContext.Provider value={"Arfath"}>
+      <CounterOne />
+      {/* <UserContext.Provider value={"Arfath"}>
         <ChannelContext.Provider value={"Suk"}>
           <ComponentA />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
       {/* <DataFetching></DataFetching> */}
       {/* <IntervalHook /> */}
       {/* <MouseContainer /> */}
