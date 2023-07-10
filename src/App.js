@@ -1,10 +1,17 @@
 import React from "react";
-import DataFetching from "./component/DataFetching";
+import ComponentA from "./component/ComponentA";
 
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 function App() {
   return (
     <div>
-      <DataFetching></DataFetching>
+      <UserContext.Provider value={"Arfath"}>
+        <ChannelContext.Provider value={"Suk"}>
+          <ComponentA />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
+      {/* <DataFetching></DataFetching> */}
       {/* <IntervalHook /> */}
       {/* <MouseContainer /> */}
       {/* <HookMouse /> */}
